@@ -1,6 +1,6 @@
-##The two functions together serve to get the inverse of a matrix m.
+##The two functions together serve to get the inverse of a matrix m
 
-##
+##This function creates the matrix which can potentially be its inverse
 makeCacheMatrix <- function( m = matrix() ) {
     i <- NULL
     set <- function( matrix ) {
