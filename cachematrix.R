@@ -1,6 +1,6 @@
 ##The two functions together serve to get the inverse of a matrix m
 
-##This function creates the matrix which can potentially be its inverse
+##This function creates the matrix which can also potentially be its inverse
 makeCacheMatrix <- function( m = matrix() ) {
     i <- NULL
     set <- function( matrix ) {
@@ -21,7 +21,7 @@ makeCacheMatrix <- function( m = matrix() ) {
          getInverse = getInverse)
 }
 
-##This function solves for the inverse of the matrix from makeCahceMatrix or returns the inverse if it is already inverse
+##This function solves for the inverse of the matrix m from makeCacheMatrix or returns it if it is already inverse
 cacheSolve <- function(x, ...) {
     m <- x$getInverse()
     if( !is.null(m) ) {
