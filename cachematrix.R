@@ -1,5 +1,6 @@
-##The two functions together serve to
+##The two functions together serve to get the inverse of a matrix m.
 
+##
 makeCacheMatrix <- function( m = matrix() ) {
     i <- NULL
     set <- function( matrix ) {
@@ -13,7 +14,6 @@ makeCacheMatrix <- function( m = matrix() ) {
         i <<- inverse
     }
     getInverse <- function() {
-        ## Return the inverse property
         i
     }
     list(set = set, get = get,
